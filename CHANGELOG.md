@@ -1,3 +1,8 @@
+# Version 0.7.1
+
+- Put the version number into the built `.dmg` file
+
+
 # Version 0.7.0
 
 - Better error handling

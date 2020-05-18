@@ -1,6 +1,6 @@
 from setuptools import setup
 
-VERSION = "0.7.0"
+VERSION = "0.7.1"
 
 APP = ["Add CMS1500 to Intergy.py"]
 DATA_FILES = []
