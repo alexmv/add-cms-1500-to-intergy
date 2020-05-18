@@ -10,6 +10,9 @@ This builds a OS X application which [Intergy] PDFs can be dragged onto;
 it will rewrite the PDF to also contain the empty form behind the raw data
 provided in the PDF.
 
+It also supports the same operation for [Intergy] files which were
+"printed" to PDF via the [eBridge] remote print driver.
+
 
 # Setup
 
@@ -41,3 +44,4 @@ pip install -r requirements.txt
 
 
 [Intergy]: https://www.greenwayhealth.com/intergy
+[eBridge]: http://www.ebridge.com/
