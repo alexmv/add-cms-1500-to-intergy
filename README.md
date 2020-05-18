@@ -1,13 +1,13 @@
 # Add CMS-1500 backgrounds to Intergy output
 
-The medical billing software Intergy prints out the data needed to
+The medical billing software [Intergy] prints out the data needed to
 fill CMS-1500 forms -- but assumes they will be physically printed
 onto physical CMS-1500 forms.  It is often useful to be able to skip
-this physical step, however, and Intergy provides no way to include
+this physical step, however, and [Intergy] provides no way to include
 the empty form itself in the output.
 
-This builds a OS X application which Intergy PDFs can be dragged onto;
-it will rewrite the PDF to contain the empty form behind the raw data
+This builds a OS X application which [Intergy] PDFs can be dragged onto;
+it will rewrite the PDF to also contain the empty form behind the raw data
 provided in the PDF.
 
 
@@ -38,3 +38,6 @@ pip install -r requirements.txt
 
  - It's an unsigned OS X application, which means that additional
    steps are required to run it.
+
+
+[Intergy]: https://www.greenwayhealth.com/intergy
