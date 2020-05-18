@@ -9,4 +9,11 @@ rm -rf build/ dist/
 
 python setup.py py2app
 
-hdiutil create -volname "$APP" -srcfolder "dist/$APP.app/" -ov -format UDZO "dist/$APP.dmg"
+# Figure out what version we just built
+VERSION=$(defaults read "$(pwd)/dist/$APP.app/Contents/Info.plist" CFBundleVersionString)
+
+hdiutil create \
+        -volname "$APP-$VERSION" \
+        -srcfolder "dist/$APP.app/" \
+        -ov -format UDZO \
+        "dist/$APP-$VERSION.dmg"
